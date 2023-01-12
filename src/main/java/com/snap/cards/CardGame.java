@@ -1,11 +1,14 @@
 package com.snap.cards;
 
 import java.util.ArrayList;
+import java.util.Collections;
 
 public class CardGame {
     ArrayList<Card> deck = new ArrayList<>();
 
-    private String name;
+    ArrayList<Card> shuffledDeck = new ArrayList<>();
+
+    private final String name;
 
     public CardGame(String name) {
         this.name = name;
@@ -30,20 +33,30 @@ public class CardGame {
                     symbol = Integer.toString(i);
             }
 
-            deck.add(new Card(Suits.hearts.getSuit(), symbol, i));
-            deck.add(new Card(Suits.diamonds.getSuit(), symbol, i));
-            deck.add(new Card(Suits.clubs.getSuit(), symbol, i));
-            deck.add(new Card(Suits.spades.getSuit(), symbol, i));
+            deck.add(new Card(Suits.HEARTS.getSuit(), symbol, i));
+            deck.add(new Card(Suits.DIAMONDS.getSuit(), symbol, i));
+            deck.add(new Card(Suits.CLUBS.getSuit(), symbol, i));
+            deck.add(new Card(Suits.SPADES.getSuit(), symbol, i));
         }
     }
 
-    public void getDeck() {
+    public ArrayList<Card> getDeck() {
         for (Card card: deck) {
             System.out.println(card.toString());
         }
+
+        return deck;
     }
 
     public String getName() {
         return name;
+    }
+
+    public ArrayList<Card> shuffleCards() {
+
+        shuffledDeck = (ArrayList<Card>) deck.clone();
+        Collections.shuffle(shuffledDeck);
+
+        return shuffledDeck;
     }
 }

@@ -1,11 +1,11 @@
 package com.snap.cards;
 
 public class Card {
-    private String suit;
+    private final String suit;
 
-    private String symbol;
+    private final String symbol;
 
-    private int value;
+    private final int value;
 
     public Card(String suit, String symbol, int value) {
         this.suit = suit;

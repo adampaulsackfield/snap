@@ -1,8 +1,8 @@
 package com.snap.cards;
 
 public enum Suits {
-    hearts("♥"), diamonds("♦"), spades("♠"), clubs("♣");
-    String suit;
+    HEARTS("♥"), DIAMONDS("♦"), SPADES("♠"), CLUBS("♣");
+    final String suit;
 
     Suits(String suit) {
         this.suit = suit;
