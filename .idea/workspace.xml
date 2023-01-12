@@ -5,14 +5,10 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="27ab2d43-5081-48cf-9f1f-bb58b1f59797" name="Changes" comment="Add all sorting methods">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/snap/cards/CardSorting.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/snap/cards/SortByDeckAndNumbers.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/snap/cards/SortDeckInNumberOrder.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/snap/cards/SortDeckIntoSuits.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/snap/cards/Snap.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/snap/userInput/UserInput.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/snap/cards/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/snap/cards/Card.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/snap/cards/CardGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/snap/cards/CardGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/snap/cards/CardGameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/snap/cards/CardGameTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -74,7 +70,7 @@
       <recent name="com.snap.cards" />
     </key>
   </component>
-  <component name="RunManager" selected="Application.Main">
+  <component name="RunManager" selected="JUnit.CardGameTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="snap" />
@@ -114,9 +110,9 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CardGameTest" />
         <item itemvalue="Application.Main" />
         <item itemvalue="JUnit.CardTest" />
-        <item itemvalue="JUnit.CardGameTest" />
       </list>
     </recent_temporary>
   </component>
@@ -136,7 +132,7 @@
       <workItem from="1673516407776" duration="24000" />
       <workItem from="1673522758730" duration="102000" />
       <workItem from="1673532780036" duration="5365000" />
-      <workItem from="1673542889264" duration="1899000" />
+      <workItem from="1673542889264" duration="6333000" />
     </task>
     <task id="LOCAL-00001" summary="Add classes for CardGame and Card. Setup Enum for suits. Complete stage one.">
       <created>1673366614094</created>
@@ -166,7 +162,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673534303165</updated>
     </task>
-    <option name="localTasksCounter" value="5" />
+    <task id="LOCAL-00005" summary="Add all sorting methods">
+      <created>1673544932706</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1673544932706</updated>
+    </task>
+    <option name="localTasksCounter" value="6" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

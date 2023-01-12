@@ -1,6 +1,7 @@
 import com.snap.cards.Card;
 import com.snap.cards.CardGame;
 import com.snap.cards.CardSorting;
+import com.snap.cards.Snap;
 
 import java.util.List;
 
@@ -30,5 +31,8 @@ public class Main {
 //
         System.out.println("Sorted: bySuitAndValue " + game.getShuffledDeck());
 
+        Snap snap = new Snap("Ollie");
+
+        snap.test();
     }
 }
