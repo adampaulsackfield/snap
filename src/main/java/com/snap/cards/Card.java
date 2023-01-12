@@ -12,6 +12,7 @@ public class Card {
         this.symbol = symbol;
         this.value = value;
     }
+
     public String getSuit() {
         return suit;
     }
@@ -23,8 +24,6 @@ public class Card {
     public int getValue() {
         return value;
     }
-
-
 
     @Override
     public String toString() {

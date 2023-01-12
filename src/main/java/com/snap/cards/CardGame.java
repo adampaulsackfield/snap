@@ -4,9 +4,7 @@ import java.util.ArrayList;
 import java.util.Collections;
 
 public class CardGame {
-    ArrayList<Card> deck = new ArrayList<>();
-
-    ArrayList<Card> shuffledDeck = new ArrayList<>();
+    private final ArrayList<Card> deck = new ArrayList<>();
 
     private final String name;
 
@@ -54,7 +52,8 @@ public class CardGame {
 
     public ArrayList<Card> shuffleCards() {
 
-        shuffledDeck = (ArrayList<Card>) deck.clone();
+        ArrayList<Card> shuffledDeck = (ArrayList<Card>) deck.clone();
+
         Collections.shuffle(shuffledDeck);
 
         return shuffledDeck;

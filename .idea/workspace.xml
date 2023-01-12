@@ -4,14 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27ab2d43-5081-48cf-9f1f-bb58b1f59797" name="Changes" comment="Testing">
-      <change afterPath="$PROJECT_DIR$/src/test/java/com/snap/cards/CardGameTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+    <list default="true" id="27ab2d43-5081-48cf-9f1f-bb58b1f59797" name="Changes" comment="Add tests for CardGameClass">
+      <change afterPath="$PROJECT_DIR$/src/test/java/com/snap/cards/CardTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/snap/cards/Card.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/snap/cards/Card.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/snap/cards/CardGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/snap/cards/CardGame.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/snap/cards/Suits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/snap/cards/Suits.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -72,7 +68,7 @@
       <recent name="com.snap.cards" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CardGameTest">
+  <component name="RunManager" selected="JUnit.CardTest">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="snap" />
@@ -95,8 +91,24 @@
         <option name="Make" enabled="true" />
       </method>
     </configuration>
+    <configuration name="CardTest" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="snap" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.snap.cards.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="com.snap.cards" />
+      <option name="MAIN_CLASS_NAME" value="com.snap.cards.CardTest" />
+      <option name="TEST_OBJECT" value="class" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="JUnit.CardTest" />
         <item itemvalue="JUnit.CardGameTest" />
         <item itemvalue="Application.Main" />
       </list>
@@ -117,7 +129,7 @@
       <workItem from="1673515380971" duration="977000" />
       <workItem from="1673516407776" duration="24000" />
       <workItem from="1673522758730" duration="102000" />
-      <workItem from="1673532780036" duration="711000" />
+      <workItem from="1673532780036" duration="1206000" />
     </task>
     <task id="LOCAL-00001" summary="Add classes for CardGame and Card. Setup Enum for suits. Complete stage one.">
       <created>1673366614094</created>
@@ -133,7 +145,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673366875298</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Add tests for CardGameClass">
+      <created>1673533556910</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1673533556910</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -142,6 +161,7 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="Add classes for CardGame and Card. Setup Enum for suits. Complete stage one." />
     <MESSAGE value="Testing" />
-    <option name="LAST_COMMIT_MESSAGE" value="Testing" />
+    <MESSAGE value="Add tests for CardGameClass" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add tests for CardGameClass" />
   </component>
 </project>
