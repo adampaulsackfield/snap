@@ -5,7 +5,7 @@ import java.util.Collections;
 
 public class CardGame {
     private final ArrayList<Card> deck = new ArrayList<>();
-
+    private final ArrayList<Card> shuffledDeck;
     private final String name;
 
     public CardGame(String name) {
@@ -14,7 +14,7 @@ public class CardGame {
         for (int i = 2; i <= 14; i++) {
             String symbol;
 
-            switch (i){
+            switch (i) {
                 case 11:
                     symbol = "J";
                     break;
@@ -36,13 +36,11 @@ public class CardGame {
             deck.add(new Card(Suits.CLUBS.getSuit(), symbol, i));
             deck.add(new Card(Suits.SPADES.getSuit(), symbol, i));
         }
+
+        shuffledDeck = (ArrayList<Card>) deck.clone();
     }
 
     public ArrayList<Card> getDeck() {
-        for (Card card: deck) {
-            System.out.println(card.toString());
-        }
-
         return deck;
     }
 
@@ -50,12 +48,30 @@ public class CardGame {
         return name;
     }
 
-    public ArrayList<Card> shuffleCards() {
-
-        ArrayList<Card> shuffledDeck = (ArrayList<Card>) deck.clone();
-
-        Collections.shuffle(shuffledDeck);
-
+    public ArrayList<Card> getShuffledDeck() {
         return shuffledDeck;
+    }
+
+    public Card dealCard() {
+        return shuffledDeck.remove(0);
+    }
+
+    public void sortDeck(CardSorting cardSorting) {
+        switch (cardSorting) {
+            case SHUFFLE:
+                Collections.shuffle(shuffledDeck);
+                break;
+            case BY_NUMBER:
+                shuffledDeck.sort(new SortDeckInNumberOrder());
+                break;
+            case BY_SUIT:
+                shuffledDeck.sort(new SortDeckIntoSuits());
+                break;
+            case BY_SUIT_AND_NUMBER:
+                shuffledDeck.sort(new SortByDeckAndNumbers());
+                break;
+            default:
+                System.out.println("Invalid Sort");
+        }
     }
 }

@@ -7,21 +7,21 @@ public class Card {
 
     private final int value;
 
-    public Card(String suit, String symbol, int value) {
+    protected Card(String suit, String symbol, int value) {
         this.suit = suit;
         this.symbol = symbol;
         this.value = value;
     }
 
-    public String getSuit() {
+    protected String getSuit() {
         return suit;
     }
 
-    public String getSymbol() {
+    protected String getSymbol() {
         return symbol;
     }
 
-    public int getValue() {
+    protected int getValue() {
         return value;
     }
 

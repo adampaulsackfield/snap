@@ -29,7 +29,13 @@ private CardGame game;
     @Test
     void shuffleCards() {
         ArrayList<Card> deck = game.getDeck();
-        ArrayList<Card> shuffledDeck = game.shuffleCards();
+        game.sortDeck(CardSorting.SHUFFLE);
+        ArrayList<Card> shuffledDeck = game.getShuffledDeck();
         assertNotEquals(deck, shuffledDeck);
+    }
+
+    @Test
+    void dealCard() {
+
     }
 }
