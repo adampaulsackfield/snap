@@ -37,7 +37,7 @@ public class Snap extends CardGame {
                 if (isSnap()) {
                     running = true;
                     currentPlayer.setPoints(1);
-                    System.out.println("Snap! " + currentPlayer.getName() + " has " + currentPlayer.getPoints() + " points");
+                    System.out.println("Snap! " + currentPlayer.getName() + " has " + currentPlayer.getPoints() + " points. " + playerTwo.getName() + " had " + playerTwo.getPoints() + " points.");
                 } else {
                     System.out.println("No snap");
                 }
@@ -65,6 +65,15 @@ public class Snap extends CardGame {
     }
 
     private void makeMove(Card card) {
+        if(card == null) {
+            if(playerOne.getPoints() > playerTwo.getPoints()) {
+                System.out.println("The winner is " + playerOne.getName() + " and you finished on " + playerOne.getPoints() + " points. " + playerTwo.getName() + " had " +playerTwo.getPoints() + " points");
+            } else {
+                System.out.println("The winner is " + playerTwo.getName() + " and you finished on " + playerTwo.getPoints() + " points. " + playerOne.getName() + " had " +playerOne.getPoints() + " points");
+
+            }
+            System.exit(0);
+        }
 
         if (left == null) {
             left = card;

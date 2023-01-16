@@ -4,15 +4,10 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27ab2d43-5081-48cf-9f1f-bb58b1f59797" name="Changes" comment="Add tests for all sorting methods">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/snap/cards/Player.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/snap/userInput/NotFoundException.java" afterDir="false" />
+    <list default="true" id="27ab2d43-5081-48cf-9f1f-bb58b1f59797" name="Changes" comment="add ability for 2 player">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/snap/cards/CardGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/snap/cards/CardGame.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/snap/cards/Snap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/snap/cards/Snap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/snap/userInput/UserInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/snap/userInput/UserInput.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/test/java/com/snap/cards/CardGameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/snap/cards/CardGameTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -172,7 +167,7 @@
       <workItem from="1673626454603" duration="499000" />
       <workItem from="1673734808339" duration="835000" />
       <workItem from="1673824821089" duration="2919000" />
-      <workItem from="1673859347280" duration="383000" />
+      <workItem from="1673859347280" duration="1080000" />
     </task>
     <task id="LOCAL-00001" summary="Add classes for CardGame and Card. Setup Enum for suits. Complete stage one.">
       <created>1673366614094</created>
@@ -216,7 +211,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673552038898</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="add ability for 2 player">
+      <created>1673859984340</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1673859984340</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -229,6 +231,7 @@
     <MESSAGE value="Add tests for CardClass" />
     <MESSAGE value="Add all sorting methods" />
     <MESSAGE value="Add tests for all sorting methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add tests for all sorting methods" />
+    <MESSAGE value="add ability for 2 player" />
+    <option name="LAST_COMMIT_MESSAGE" value="add ability for 2 player" />
   </component>
 </project>

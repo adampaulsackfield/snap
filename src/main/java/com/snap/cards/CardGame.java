@@ -56,7 +56,7 @@ public class CardGame {
         try {
             return shuffledDeck.remove(0);
         } catch(IndexOutOfBoundsException e) {
-            System.out.println("Not found");
+            System.out.println("You have reached the end of the deck");
         }
         return null;
     }
