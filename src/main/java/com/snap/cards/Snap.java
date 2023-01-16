@@ -26,19 +26,19 @@ public class Snap extends CardGame {
 
         while (running) {
             Player currentPlayer = turn % 2 == 0 ? playerOne : playerTwo;
+
             System.out.println(Messages.PLAYER_MESSAGE.showPlayerMessage(currentPlayer.getName()));
 
             String response = scanner.handleInput();
 
-                if (response.equals("snap") && left != null && right != null) {
-                    if (isSnap()) {
-                        running = true;
-                        currentPlayer.setPoints(1);
-                        System.out.println(Messages.SNAP_MESSAGE.showSnapMessage(currentPlayer.getName()));
-                    } else {
-                        System.out.println(Messages.NO_SNAP.showMessage());
-                    }
+            if (response.equals("snap") && left != null && right != null) {
+                if (isSnap()) {
+                    currentPlayer.setPoints(1);
+                    System.out.println(Messages.SNAP_MESSAGE.showSnapMessage(currentPlayer.getName()));
+                } else {
+                    System.out.println(Messages.NO_SNAP.showMessage());
                 }
+            }
 
             Card currentCard = dealCard();
 
@@ -55,6 +55,7 @@ public class Snap extends CardGame {
                 } else {
                     System.out.println(Messages.DRAW.showMessage());
                 }
+
                 System.exit(0);
             }
         }
