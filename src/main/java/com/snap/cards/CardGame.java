@@ -52,8 +52,13 @@ public class CardGame {
         return shuffledDeck;
     }
 
-    public Card dealCard() {
-        return shuffledDeck.remove(0);
+    public Card dealCard () {
+        try {
+            return shuffledDeck.remove(0);
+        } catch(IndexOutOfBoundsException e) {
+            System.out.println("Not found");
+        }
+        return null;
     }
 
     public void sortDeck(CardSorting cardSorting) {

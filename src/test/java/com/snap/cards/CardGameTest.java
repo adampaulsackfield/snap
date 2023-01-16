@@ -5,8 +5,6 @@ import org.junit.jupiter.api.DisplayName;
 import org.junit.jupiter.api.Test;
 
 import java.util.ArrayList;
-import java.util.List;
-import java.util.Objects;
 
 import static org.junit.jupiter.api.Assertions.*;
 
@@ -93,7 +91,22 @@ class CardGameTest {
     }
 
     @Test
+    @DisplayName("Should deal a card from the top of the deck")
     void dealCard() {
+        game.sortDeck(CardSorting.SHUFFLE);
+        ArrayList<Card> shuffledDeck = game.getShuffledDeck();
 
+        Card topOfDeck = shuffledDeck.get(0);
+        Card topOfDeckAfterOneDeal = shuffledDeck.get(1);
+        Card dealtCard = game.dealCard();
+
+        // Test for the top of the deck being drawn
+        assertEquals(topOfDeck, dealtCard);
+
+        Card cardTwo = game.dealCard();
+
+        // Confirm the next card dealt is different and is the second card in the deck
+        assertNotEquals(dealtCard, cardTwo);
+        assertEquals(topOfDeckAfterOneDeal, cardTwo);
     }
 }

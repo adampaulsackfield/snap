@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27ab2d43-5081-48cf-9f1f-bb58b1f59797" name="Changes" comment="Add all sorting methods">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/snap/cards/Snap.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/snap/userInput/UserInput.java" afterDir="false" />
+    <list default="true" id="27ab2d43-5081-48cf-9f1f-bb58b1f59797" name="Changes" comment="Add tests for all sorting methods">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/snap/cards/Player.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/snap/userInput/NotFoundException.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/snap/cards/CardGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/snap/cards/CardGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/snap/cards/Snap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/snap/cards/Snap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/snap/userInput/UserInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/snap/userInput/UserInput.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/snap/cards/CardGameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/snap/cards/CardGameTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -56,6 +59,9 @@
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
     &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;project.structure.last.edited&quot;: &quot;Libraries&quot;,
+    &quot;project.structure.proportion&quot;: &quot;0.0&quot;,
+    &quot;project.structure.side.proportion&quot;: &quot;0.5597701&quot;,
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
@@ -70,10 +76,36 @@
       <recent name="com.snap.cards" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CardGameTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="snap" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Test" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.snap.cards.Test" />
+      <module name="snap" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.snap.cards.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Timer" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
+      <option name="MAIN_CLASS_NAME" value="com.snap.cards.Timer" />
+      <module name="snap" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="com.snap.cards.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -110,8 +142,10 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CardGameTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="Application.Timer" />
+        <item itemvalue="Application.Test" />
+        <item itemvalue="JUnit.CardGameTest" />
         <item itemvalue="JUnit.CardTest" />
       </list>
     </recent_temporary>
@@ -132,7 +166,13 @@
       <workItem from="1673516407776" duration="24000" />
       <workItem from="1673522758730" duration="102000" />
       <workItem from="1673532780036" duration="5365000" />
-      <workItem from="1673542889264" duration="6333000" />
+      <workItem from="1673542889264" duration="7154000" />
+      <workItem from="1673600361438" duration="8042000" />
+      <workItem from="1673620059613" duration="5787000" />
+      <workItem from="1673626454603" duration="499000" />
+      <workItem from="1673734808339" duration="835000" />
+      <workItem from="1673824821089" duration="2919000" />
+      <workItem from="1673859347280" duration="383000" />
     </task>
     <task id="LOCAL-00001" summary="Add classes for CardGame and Card. Setup Enum for suits. Complete stage one.">
       <created>1673366614094</created>
@@ -169,7 +209,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673544932706</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Add tests for all sorting methods">
+      <created>1673552038898</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1673552038898</updated>
+    </task>
+    <option name="localTasksCounter" value="7" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -181,6 +228,7 @@
     <MESSAGE value="Add tests for CardGameClass" />
     <MESSAGE value="Add tests for CardClass" />
     <MESSAGE value="Add all sorting methods" />
-    <option name="LAST_COMMIT_MESSAGE" value="Add all sorting methods" />
+    <MESSAGE value="Add tests for all sorting methods" />
+    <option name="LAST_COMMIT_MESSAGE" value="Add tests for all sorting methods" />
   </component>
 </project>
