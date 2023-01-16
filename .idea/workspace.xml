@@ -4,11 +4,14 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="27ab2d43-5081-48cf-9f1f-bb58b1f59797" name="Changes" comment="add points">
-      <change afterPath="$PROJECT_DIR$/src/main/java/com/snap/userInput/Messages.java" afterDir="false" />
+    <list default="true" id="27ab2d43-5081-48cf-9f1f-bb58b1f59797" name="Changes" comment="add ability to win, customer messages and draw output">
+      <change afterPath="$PROJECT_DIR$/src/main/java/com/snap/cards/Timer.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/snap/cards/CardGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/snap/cards/CardGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/snap/cards/Player.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/snap/cards/Player.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/snap/cards/Snap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/snap/cards/Snap.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/snap/cards/Suits.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/snap/cards/Suits.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/snap/userInput/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/snap/userInput/Messages.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/snap/userInput/UserInput.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/snap/userInput/UserInput.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -168,7 +171,7 @@
       <workItem from="1673626454603" duration="499000" />
       <workItem from="1673734808339" duration="835000" />
       <workItem from="1673824821089" duration="2919000" />
-      <workItem from="1673859347280" duration="5883000" />
+      <workItem from="1673859347280" duration="10438000" />
     </task>
     <task id="LOCAL-00001" summary="Add classes for CardGame and Card. Setup Enum for suits. Complete stage one.">
       <created>1673366614094</created>
@@ -226,7 +229,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673860625051</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="add ability to win, customer messages and draw output">
+      <created>1673866096439</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1673866096439</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -241,6 +251,7 @@
     <MESSAGE value="Add tests for all sorting methods" />
     <MESSAGE value="add ability for 2 player" />
     <MESSAGE value="add points" />
-    <option name="LAST_COMMIT_MESSAGE" value="add points" />
+    <MESSAGE value="add ability to win, customer messages and draw output" />
+    <option name="LAST_COMMIT_MESSAGE" value="add ability to win, customer messages and draw output" />
   </component>
 </project>

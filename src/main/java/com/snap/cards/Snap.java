@@ -3,18 +3,13 @@ package com.snap.cards;
 import com.snap.userInput.Messages;
 import com.snap.userInput.UserInput;
 
-import java.util.Timer;
-import java.util.TimerTask;
-
 public class Snap extends CardGame {
-    private String response = null;
     private Card left = null;
     private Card right = null;
     private boolean running = true;
     private Player playerOne;
     private Player playerTwo;
     private int turn = 0;
-    private Player currentPlayer;
 
     public Snap(String name) {
         super(name);
@@ -24,46 +19,47 @@ public class Snap extends CardGame {
         UserInput scanner = new UserInput();
 
         System.out.println(Messages.WELCOME.showMessage());
-        ;
 
         sortDeck(CardSorting.SHUFFLE);
 
         addPlayers();
 
         while (running) {
-            currentPlayer = turn % 2 == 0 ? playerOne : playerTwo;
+            Player currentPlayer = turn % 2 == 0 ? playerOne : playerTwo;
             System.out.println(Messages.PLAYER_MESSAGE.showPlayerMessage(currentPlayer.getName()));
-            ;
-            response = scanner.handleInput();
 
-            if (response.equals("snap") && left != null && right != null) {
-                if (isSnap()) {
-                    running = true;
-                    currentPlayer.setPoints(1);
-                    System.out.println(Messages.SNAP_MESSAGE.showSnapMessage(currentPlayer.getName()));
-                    ;
-                } else {
-                    System.out.println(Messages.NO_SNAP.showMessage());
+            String response = scanner.handleInput();
+
+                if (response.equals("snap") && left != null && right != null) {
+                    if (isSnap()) {
+                        running = true;
+                        currentPlayer.setPoints(1);
+                        System.out.println(Messages.SNAP_MESSAGE.showSnapMessage(currentPlayer.getName()));
+                    } else {
+                        System.out.println(Messages.NO_SNAP.showMessage());
+                    }
                 }
-            }
 
             Card currentCard = dealCard();
+
             if (currentCard != null) {
                 makeMove(currentCard);
                 turn++;
             } else {
                 if (playerOne.getPoints() > playerTwo.getPoints()) {
                     System.out.println(Messages.PLAYER_WIN.showWinner(playerOne, playerTwo));
-                } else if(playerOne.getPoints() < playerTwo.getPoints()) {
-                    System.out.println(Messages.PLAYER_WIN.showWinner(playerTwo, playerOne));;
-                } else{
-                    System.out.println("It's a draw, can you believe it.");
+                } else if (playerOne.getPoints() < playerTwo.getPoints()) {
+                    System.out.println(Messages.PLAYER_WIN.showWinner(playerTwo, playerOne));
+                    ;
+                } else {
+                    System.out.println(Messages.DRAW.showMessage());
                 }
                 System.exit(0);
             }
         }
 
     }
+
     private void addPlayers() {
         UserInput scanner = new UserInput();
 

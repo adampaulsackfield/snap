@@ -7,10 +7,9 @@ import java.util.TimerTask;
 public class UserInput {
     private final Scanner scanner = new Scanner(System.in);
     private String userInput;
-    private boolean running;
 
     public String handleInput() {
-        running = true;
+        boolean running = true;
 
         while (running) {
             userInput = scanner.nextLine().toLowerCase();

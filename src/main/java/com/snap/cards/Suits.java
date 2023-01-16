@@ -2,7 +2,7 @@ package com.snap.cards;
 
 public enum Suits {
     HEARTS("♥"), DIAMONDS("♦"), SPADES("♠"), CLUBS("♣");
-    final String suit;
+    private final String suit;
 
     Suits(String suit) {
         this.suit = suit;
