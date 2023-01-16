@@ -45,12 +45,13 @@ public class Snap extends CardGame {
             if (currentCard != null) {
                 makeMove(currentCard);
                 turn++;
+                System.out.println("Left: " + left);
+                System.out.println("Right: " + right);
             } else {
                 if (playerOne.getPoints() > playerTwo.getPoints()) {
                     System.out.println(Messages.PLAYER_WIN.showWinner(playerOne, playerTwo));
                 } else if (playerOne.getPoints() < playerTwo.getPoints()) {
                     System.out.println(Messages.PLAYER_WIN.showWinner(playerTwo, playerOne));
-                    ;
                 } else {
                     System.out.println(Messages.DRAW.showMessage());
                 }
@@ -85,8 +86,5 @@ public class Snap extends CardGame {
             left = right;
             right = card;
         }
-
-        System.out.println("Left: " + left);
-        System.out.println("Right: " + right);
     }
 }

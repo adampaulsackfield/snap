@@ -8,8 +8,6 @@ public class SortByDeckAndNumbers implements Comparator<Card> {
 
     @Override
     public int compare(Card left, Card right) {
-//        return left.getSuit().compareTo(right.getSuit());
-
         int suitComparison = sortBySuit.compare(left, right);
         if (suitComparison != 0) {
             return suitComparison;
