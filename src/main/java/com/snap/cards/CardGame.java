@@ -52,11 +52,10 @@ public class CardGame {
         return shuffledDeck;
     }
 
-    public Card dealCard () {
-        try {
+    public Card dealCard() {
+        System.out.println(shuffledDeck.size());
+        if (shuffledDeck.size() > 0) {
             return shuffledDeck.remove(0);
-        } catch(IndexOutOfBoundsException e) {
-            System.out.println("You have reached the end of the deck");
         }
         return null;
     }

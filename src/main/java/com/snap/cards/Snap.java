@@ -1,5 +1,6 @@
 package com.snap.cards;
 
+import com.snap.userInput.Messages;
 import com.snap.userInput.UserInput;
 
 import java.util.Timer;
@@ -22,7 +23,8 @@ public class Snap extends CardGame {
     public void start() {
         UserInput scanner = new UserInput();
 
-        System.out.println("🐊 Welcome to Snap 🐊");
+        System.out.println(Messages.WELCOME.showMessage());
+        ;
 
         sortDeck(CardSorting.SHUFFLE);
 
@@ -30,32 +32,46 @@ public class Snap extends CardGame {
 
         while (running) {
             currentPlayer = turn % 2 == 0 ? playerOne : playerTwo;
-            System.out.println(currentPlayer.getName()  + "'s turn. Press enter to start");
+            System.out.println(Messages.PLAYER_MESSAGE.showPlayerMessage(currentPlayer.getName()));
+            ;
             response = scanner.handleInput();
 
             if (response.equals("snap") && left != null && right != null) {
                 if (isSnap()) {
                     running = true;
                     currentPlayer.setPoints(1);
-                    System.out.println("Snap! " + currentPlayer.getName() + " has " + currentPlayer.getPoints() + " points. " + playerTwo.getName() + " had " + playerTwo.getPoints() + " points.");
+                    System.out.println(Messages.SNAP_MESSAGE.showSnapMessage(currentPlayer.getName()));
+                    ;
                 } else {
-                    System.out.println("No snap");
+                    System.out.println(Messages.NO_SNAP.showMessage());
                 }
             }
-            makeMove(dealCard());
-            turn++;
+
+            Card currentCard = dealCard();
+            if (currentCard != null) {
+                makeMove(currentCard);
+                turn++;
+            } else {
+                if (playerOne.getPoints() > playerTwo.getPoints()) {
+                    System.out.println(Messages.PLAYER_WIN.showWinner(playerOne, playerTwo));
+                } else if(playerOne.getPoints() < playerTwo.getPoints()) {
+                    System.out.println(Messages.PLAYER_WIN.showWinner(playerTwo, playerOne));;
+                } else{
+                    System.out.println("It's a draw, can you believe it.");
+                }
+                System.exit(0);
+            }
         }
 
     }
-
     private void addPlayers() {
         UserInput scanner = new UserInput();
 
-        System.out.println("Player One: Enter you name?");
+        System.out.println(Messages.PLAYER_NAME.showNamePrompt("Player one"));
         playerOne = new Player();
         playerOne.setName(scanner.getName());
 
-        System.out.println("Player Two: Enter you name?");
+        System.out.println(Messages.PLAYER_NAME.showNamePrompt("Player two"));
         playerTwo = new Player();
         playerTwo.setName(scanner.getName());
     }
@@ -65,16 +81,6 @@ public class Snap extends CardGame {
     }
 
     private void makeMove(Card card) {
-        if(card == null) {
-            if(playerOne.getPoints() > playerTwo.getPoints()) {
-                System.out.println("The winner is " + playerOne.getName() + " and you finished on " + playerOne.getPoints() + " points. " + playerTwo.getName() + " had " +playerTwo.getPoints() + " points");
-            } else {
-                System.out.println("The winner is " + playerTwo.getName() + " and you finished on " + playerTwo.getPoints() + " points. " + playerOne.getName() + " had " +playerOne.getPoints() + " points");
-
-            }
-            System.exit(0);
-        }
-
         if (left == null) {
             left = card;
         } else if (right == null) {
