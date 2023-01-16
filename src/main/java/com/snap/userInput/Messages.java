@@ -3,7 +3,7 @@ package com.snap.userInput;
 import com.snap.cards.Player;
 
 public enum Messages {
-    WELCOME("🐊 Welcome to Snap 🐊"), PLAYER_MESSAGE("'s turn. Press enter to start"), SNAP_MESSAGE("SNAP! One point scored by "), NO_SNAP("No snap"), PLAYER_NAME(": Enter you name?"), PLAYER_WIN("The winner is "), DRAW("It's a draw, can you believe it.");
+    WELCOME("🐊 Welcome to Snap 🐊"), PLAYER_MESSAGE("'s turn. Press enter or type 'snap' if you see a pair."), SNAP_MESSAGE("SNAP! One point scored by "), NO_SNAP("No snap"), PLAYER_NAME(": Enter you name?"), PLAYER_WIN("The winner is "), DRAW("It's a draw, can you believe it.");
     final String message;
 
     Messages(String message) {

@@ -6,8 +6,8 @@
   <component name="ChangeListManager">
     <list default="true" id="27ab2d43-5081-48cf-9f1f-bb58b1f59797" name="Changes" comment="refactor">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/snap/cards/Snap.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/snap/cards/Snap.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/snap/cards/SortByDeckAndNumbers.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/snap/cards/SortByDeckAndNumbers.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/snap/cards/CardGame.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/snap/cards/CardGame.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/snap/userInput/Messages.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/snap/userInput/Messages.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/test/java/com/snap/cards/CardGameTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/test/java/com/snap/cards/CardGameTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -72,7 +72,7 @@
       <recent name="com.snap.cards" />
     </key>
   </component>
-  <component name="RunManager" selected="JUnit.CardGameTest">
+  <component name="RunManager" selected="Application.Main">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="Main" />
       <module name="snap" />
@@ -138,8 +138,8 @@
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="JUnit.CardGameTest" />
         <item itemvalue="Application.Main" />
+        <item itemvalue="JUnit.CardGameTest" />
         <item itemvalue="Application.Timer" />
         <item itemvalue="Application.Test" />
         <item itemvalue="JUnit.CardTest" />
@@ -169,7 +169,7 @@
       <workItem from="1673734808339" duration="835000" />
       <workItem from="1673824821089" duration="2919000" />
       <workItem from="1673859347280" duration="11343000" />
-      <workItem from="1673873180910" duration="3752000" />
+      <workItem from="1673873180910" duration="5133000" />
     </task>
     <task id="LOCAL-00001" summary="Add classes for CardGame and Card. Setup Enum for suits. Complete stage one.">
       <created>1673366614094</created>
@@ -241,7 +241,14 @@
       <option name="project" value="LOCAL" />
       <updated>1673871163721</updated>
     </task>
-    <option name="localTasksCounter" value="11" />
+    <task id="LOCAL-00011" summary="refactor">
+      <created>1673883410946</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1673883410946</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">

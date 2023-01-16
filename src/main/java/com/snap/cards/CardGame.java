@@ -40,27 +40,28 @@ public class CardGame {
         shuffledDeck = (ArrayList<Card>) deck.clone();
     }
 
-    public ArrayList<Card> getDeck() {
+    protected ArrayList<Card> getDeck() {
         return deck;
     }
 
-    public String getName() {
+    protected String getName() {
         return name;
     }
 
-    public ArrayList<Card> getShuffledDeck() {
+    protected ArrayList<Card> getShuffledDeck() {
         return shuffledDeck;
     }
 
-    public Card dealCard() {
-        System.out.println(shuffledDeck.size());
+    protected Card dealCard() {
+        System.out.println(shuffledDeck.size() + " remaining card(s)");
+
         if (shuffledDeck.size() > 0) {
             return shuffledDeck.remove(0);
         }
         return null;
     }
 
-    public void sortDeck(CardSorting cardSorting) {
+    protected void sortDeck(CardSorting cardSorting) {
         switch (cardSorting) {
             case SHUFFLE:
                 Collections.shuffle(shuffledDeck);

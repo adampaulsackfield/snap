@@ -86,8 +86,6 @@ class CardGameTest {
                 assertEquals(shuffledDeck.get(i).getValue(), shuffledDeck.get(i + 1).getValue() - 1);
             }
         }
-
-
     }
 
     @Test
